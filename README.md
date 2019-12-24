@@ -34,5 +34,5 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
 
 3. 完整 <- 使用 SHA 函數產生 MAC。
 
-4. 機密 <- 內文使用 Symmetric Crypto，且標頭加入在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中。
+4. 機密 <- 內文使用 RSA，且標頭加入在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中。
 
