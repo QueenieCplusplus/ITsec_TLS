@@ -85,6 +85,26 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
    
    Seq
    
+# Connection Verify by 3way Hand Shake, 三方交握
+   
+Header
+   
+        Protocol: 22        Version:          Length:
+        Type:       
+        
+Type
+
+         0  HelloReq
+         1  ClientHello
+         2  ServerHello
+        11  Cert
+        12  ServerKeyExchange
+        13  CertReq
+        14  ServerHelloDone
+        15  CertVerify
+        16  ClientKeyExchange
+        20  Fisnished  
+   
 # TCP
 
  https://github.com/QueenieCplusplus/Networking/blob/master/TCP.md
