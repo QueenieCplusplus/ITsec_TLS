@@ -62,6 +62,15 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
 
 # Connection Options, 連線的參數
 
+
+             Client       <->     R/W R/W   <->      Server
+                          <->     R/W R/W   <-> 
+                          <->     R/W R/W   <-> 
+          
+             3 pair of Keys means there are 6 R/W Keys
+             Write means Sign & Send
+             Read means Authenticate or Verification & Receive
+
    Random
    
    MAC Key write by Server
