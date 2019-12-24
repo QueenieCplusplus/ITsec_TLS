@@ -28,6 +28,12 @@ TLS 提供了安全可靠的點對點通訊服務，可應用於電商購物車�
 
 TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協定範圍仍然在 HTTP，能接收來自應用層協定的傳輸資料，收到資料時，會將其壓縮、簽署、加密，然後傳到 TCP 協定通道中。
 
+
+             Client       < - >     R/W   < - >        Server
+             
+             Write means Sign & Send
+             Read means Authenticate or Verification & Receive
+
 1. 資料 <- 對收到的資料進行分割與壓縮。
 
 2. 確認 <- Auth。
