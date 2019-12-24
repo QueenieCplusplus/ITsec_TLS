@@ -28,11 +28,13 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
             MAC means "Message Authentication Code"
 
 3. 機密 <- 標頭裝框在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中，而接收方則會進行去框，得到標頭內文。
+>>>
 
              Client       < - >     R/W   < - >        Server
              
              Write means Sign & Send
              Read means Verif & Receive
+>>>
 
 1. 確認 -> 買家客戶需要確定對應的伺服器是真正的賣主。
 
