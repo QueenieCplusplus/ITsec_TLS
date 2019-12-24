@@ -61,6 +61,14 @@ ClientKeyExchange
 >>>
 ChanegCipherSpec
 
+               Client                       Server
+                 ｜                            
+                  ---- 密文變更值 ---------->      |
+                   ----  MD5+SHA ---------->    |
+                       <----------密文變更值----|
+                       <----------MD5+SHA----|             
+                     
+
 
 >>>
 
