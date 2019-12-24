@@ -59,6 +59,10 @@ ClientKeyExchange
                      用 Hash code 證明憑證
                     
 >>>
+ChanegCipherSpec
+
+
+>>>
 
 1. 確認 -> 買家客戶需要確定對應的伺服器是真正的賣主。
 
@@ -76,13 +80,11 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
              Write means Sign & Send
              Read means Verif & Receive
 
-1. 資料 <- 對收到的資料進行分割與壓縮，而接收端則會接收並重組。
+1. 完整 <- 對收到的資料進行分割與壓縮，而接收端則會接收並重組。
 
-2. 確認 <- 利用 MD5 或是 SHA 建立 MAC Signature。
+2. 確認 <- 利用 MD5 或是 SHA-1 建立 MAC Signature。
 
-3. 完整 <- 使用 SHA 函數產生 MAC。
-
-4. 機密 <- 標頭裝框在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中，而接收方則會進行去框，得到標頭內文。
+3. 機密 <- 標頭裝框在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中，而接收方則會進行去框，得到標頭內文。
 
 # Session & Connection, 會議與連線
 
