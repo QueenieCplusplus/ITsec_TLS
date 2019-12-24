@@ -60,7 +60,7 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
    
    Compress
    
-   Crypto (雙方均同意的加密套件)
+   Crypto (雙方均同意的加密套件，見 ChangeCipherSpec Protocol)
    
    Key (48 bytes 的 value)
 
@@ -95,7 +95,7 @@ Header
 Protocol
 
         20 密文變更協定
-        21 警示協定
+        21 警示協定，報告異常或致命。
         22 握手協定
         23 來自應用層資料
  
