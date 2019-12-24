@@ -31,6 +31,8 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
 
 2. 確認 <- 利用 MD5 或是 SHA-1 建立 MAC Signature。
 
+            MAC means "Message Authentication Code"
+
 3. 機密 <- 標頭裝框在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中，而接收方則會進行去框，得到標頭內文。
 
 TLS
