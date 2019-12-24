@@ -89,9 +89,16 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
    
 Header
    
-        Protocol: 22        Version:          Length:
+        Protocol:22        Version:          Length:
         Type:       
-        
+
+Protocol
+
+        20 密文變更協定
+        21 警示協定
+        22 握手協定
+        23 來自應用層資料
+ 
 Type
 
          0  HelloReq
