@@ -54,6 +54,8 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
    
    https://github.com/QueenieCplusplus/Backend_Script2/tree/master/PhpSession-master
    
+   https://github.com/QueenieCplusplus/Backend_Script2/blob/master/PhpSession-master/Session.php
+   
    Peer Cert (X.509)
    
    Compress
