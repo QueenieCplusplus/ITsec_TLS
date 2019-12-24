@@ -32,7 +32,7 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
              Client       < - >     R/W   < - >        Server
              
              Write means Sign & Send
-             Read means Authenticate or Verification & Receive
+             Read means Verif & Receive
 
 1. 資料 <- 對收到的資料進行分割與壓縮，而接收端則會接收並重組。
 
