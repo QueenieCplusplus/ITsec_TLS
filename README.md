@@ -54,3 +54,20 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
    
    Key (48 bytes 的 value)
 
+# Connection Options, 連線的參數
+
+   Random
+   
+   MAC Key write by Server
+   
+   MAC Key write by Client
+   
+   Key write by Server
+   
+   Key write by Client
+   
+   Init Vector
+   
+   Seq
+   
+   
