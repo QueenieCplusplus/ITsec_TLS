@@ -21,12 +21,6 @@ ISO
 
 TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協定範圍仍然在 HTTP，能接收來自應用層協定的傳輸資料，收到資料時，會將其壓縮、簽署、加密，然後傳到 TCP 協定通道中。
 
-
-             Client       < - >     R/W   < - >        Server
-             
-             Write means Sign & Send
-             Read means Verif & Receive
-
 1. 完整 <- 對收到的資料進行分割與壓縮，而接收端則會接收並重組。
 
 2. 確認 <- 利用 MD5 或是 SHA-1 建立 MAC Signature。
@@ -34,6 +28,18 @@ TLS 設計對來自於應用層產生的資要提公壓縮服務，其服務協�
             MAC means "Message Authentication Code"
 
 3. 機密 <- 標頭裝框在加密後的 loader 中，此 loader 也會被傳送到 TCP 傳輸協定中，而接收方則會進行去框，得到標頭內文。
+
+             Client       < - >     R/W   < - >        Server
+             
+             Write means Sign & Send
+             Read means Verif & Receive
+
+1. 確認 -> 買家客戶需要確定對應的伺服器是真正的賣主。
+
+2. 完整 -> 買賣家之間的訊息需要確定未被竄改，而且完整。
+
+3. 機密 -> 買家傳送給賣家的個人資訊包含信用卡授權碼未被中間人攔截。
+
 
 TLS
 
@@ -87,14 +93,6 @@ ChanegCipherSpec
                        <----------MD5+SHA----|             
                      
 
-
->>>
-
-1. 確認 -> 買家客戶需要確定對應的伺服器是真正的賣主。
-
-2. 完整 -> 買賣家之間的訊息需要確定未被竄改，而且完整。
-
-3. 機密 -> 買家傳送給賣家的個人資訊包含信用卡授權碼未被中間人攔截。
 
 # Session & Connection, 會議與連線
 
